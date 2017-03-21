@@ -1,2 +1,2 @@
 # School
-# Hier komt waarschijnlijk een portfolio.
+## Hier komt waarschijnlijk mijn procesportfolio waarin mijn volledige proces te zien is.
