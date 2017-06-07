@@ -1,5 +1,31 @@
 body{
-	background-color:#333;
+	background-color:#f2e7cd; /*262626 antrasiet*/
+}
+
+#art{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	cursor: pointer;
+}
+
+#next{
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: #f45858;
+	position: fixed;
+	left: 1825px;
+	top: 825px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#next p{
+	color: #ffffff;
+	font-size: 15pt;
+	margin-left: 20px;
+	margin-top: 11px;
 }
 
 #blog{
@@ -33,11 +59,12 @@ h1, p, a{
 
 #day{
 	margin-top: 30px;
-	color: #e3e3e3;
+	color: #f45858;
 }
 
 h1{
 	padding-top: 30px;
+	color: #f2e7cd;
 }
 
 #info{
@@ -49,17 +76,22 @@ h1{
 
 #link{
 	text-decoration: none;
-	font-size: 11pt;
+	font-size: 9pt;
 	height: auto;
 	top: 10px;
 	padding-bottom: 30px;
-	color: #e3e3e3;
+	color: #f45858;
+	z-index: 10;
 }
 
 img{
 	margin-top: 10px;
 	width: 100%;
 
+}
+
+video{
+	width: 100%;
 }
 
 #empty{
