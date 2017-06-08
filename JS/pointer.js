@@ -47,13 +47,13 @@
 // circle02.animate(anim);
 // }
 
+var col01 = "#77d290";
+var col02 = "#77d290";
+var col03 = "#ffffff";
+var col04 = "#ffffff";
 
-var circle01;
-var circle02;
-var circle03;
-var circle04;
- 
-   function Drawcircle(){
+function Drawcircle(){
+
 
 var sw = window.innerWidth;
 var sh = window.innerHeight;
@@ -77,38 +77,30 @@ var obj = "";
 var fill = "";
 var attr = {};
 
-var set = {
-    obj: circle01,
-    fill: "ff00ff"
-};
-
-
-
-
 	circle01 = p.circle( px, py, 15)
       .attr({
-        fill : "ff0000", // #00FFFF cyan
+        fill : col01, // #00FFFF cyan
         stroke : "none",
         cursor :  "pointer"
         });
 
 	circle02 = p.circle( px, py, 15)
       .attr({
-        fill : "#77d290", // #00FFFF cyan
+        fill : col02, // #00FFFF cyan
         stroke : "none",
         cursor :  "pointer"
         });
 
 	circle03 = p.circle( px, py, 7)
       .attr({
-        fill : "#ffffff", // #00FFFF cyan
+        fill : col03, // #00FFFF cyan
         stroke : "none",
         cursor :  "pointer"
         });	
 
     circle04 = p.circle( px, py, 15)
       .attr({
-        fill : "#ffffff", // #00FFFF cyan
+        fill : col04, // #00FFFF cyan
         stroke : "none",
         cursor :  "pointer"
         });
@@ -129,6 +121,8 @@ var set = {
 	       circle03.animate(anim03);
 	       circle04.animate(anim04);
      
+
+
     // var update = function(obj, fill){
     //     var p = Raphael(0, 0, sw, sh);
     //     obj.attr({fill: attr.fill});
@@ -136,17 +130,36 @@ var set = {
 
     // update();
 
-      init = function(){
-        obj = obj
-        fill = fill
-      };
 
-      obj.attr({fill: fill});
 
-        return{
-        init: init
-        };
+
+      
+
+      // obj.attr({fill: fill});
+
+        
+        
     };
+
+function colour(element, color01){
+    if (element === "circle01") {
+        col01 = color01;
+    };
+
+    if (element === "circle02") {
+        col02 = color01;
+    };
+
+    if (element === "circle03") {
+        col03 = color01;
+    };
+
+    if (element === "circle04") {
+        col04 = color01;
+    };
+
+    console.log(color01);
+};
         // return{
         //     attr: attr({
         //         fill : fill, // #00FFFF cyan
@@ -160,4 +173,3 @@ var set = {
     // function Draw(){
     // return Drawcircle();
     // };
-// };
